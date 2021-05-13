@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirpilCommunicatorPluginBase", "VirpilCommunicatorPluginBase\VirpilCommunicatorPluginBase.csproj", "{4EC6FFAF-2EDC-4D17-B148-1717EF6DBE05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViLAPluginBase", "ViLAPluginBase\ViLAPluginBase.csproj", "{4EC6FFAF-2EDC-4D17-B148-1717EF6DBE05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

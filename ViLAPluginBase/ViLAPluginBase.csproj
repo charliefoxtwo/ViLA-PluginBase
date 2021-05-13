@@ -2,18 +2,23 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
-        <RootNamespace>Virpil.Communicator.PluginBase</RootNamespace>
+        <RootNamespace>ViLA.PluginBase</RootNamespace>
         <Nullable>enable</Nullable>
-        <PackageId>Virpil.Communicator.PluginBase</PackageId>
-        <Title>Virpil Communicator Plugin Base</Title>
+        <PackageId>ViLA.PluginBase</PackageId>
+        <Title>ViLA Plugin Base</Title>
         <Description>Contains base types for use by Virpil Communicator plugins.</Description>
         <RepositoryType>git</RepositoryType>
         <PackageVersion>0.1.0-alpha</PackageVersion>
-        <PackageProjectUrl>https://github.com/charliefoxtwo/Virpil-Communicator-PluginBase.git</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/charliefoxtwo/ViLA-PluginBase.git</PackageProjectUrl>
         <PackageLicenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</PackageLicenseUrl>
-        <RepositoryUrl>https://github.com/charliefoxtwo/Virpil-Communicator-PluginBase.git</RepositoryUrl>
+        <RepositoryUrl>https://github.com/charliefoxtwo/ViLA-PluginBase.git</RepositoryUrl>
         <PackageIconUrl>https://raw.githubusercontent.com/charliefoxtwo/Virpil-Communicator-PluginBase/main/VirpilCommunicatorPluginBase/resources/rounded-plug.png</PackageIconUrl>
         <PackageIcon>rounded-plug.png</PackageIcon>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <AssemblyVersion>0.1.0</AssemblyVersion>
+        <FileVersion>0.1.0-alpha</FileVersion>
+        <Authors>charliefoxtwo</Authors>
+        <PackageTags>virpil</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
