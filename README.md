@@ -53,7 +53,7 @@ This will prevent any dependency confusion between your plugin, any other plugin
 
 Some example plugins include:
 
-- [VPCDCSBios]()
+- [DCS Bios Reader](https://github.com/charliefoxtwo/ViLA-DCS-BIOS-Reader)
 
 
 ## Acknowledgements
