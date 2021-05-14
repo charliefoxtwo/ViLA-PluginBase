@@ -1,9 +1,9 @@
 
-# Virpil Communicator Plugin Base
+# ViLA Plugin Base
 
-![Nuget](https://img.shields.io/nuget/v/Virpil.Communicator.PluginBase?style=flat-square)
-[![.NET 5 CI build](https://github.com/charliefoxtwo/Virpil-Communicator-PluginBase/actions/workflows/ci-build.yml/badge.svg?branch=develop)](https://github.com/charliefoxtwo/Virpil-Communicator-PluginBase/actions/workflows/ci-build.yml)
-![GitHub](https://img.shields.io/github/license/charliefoxtwo/Virpil-Communicator-PluginBase?style=flat-square)
+![Nuget](https://img.shields.io/nuget/v/ViLA.PluginBase?style=flat-square)
+[![.NET 5 CI build](https://github.com/charliefoxtwo/ViLA-PluginBase/actions/workflows/ci-build.yml/badge.svg?branch=develop)](https://github.com/charliefoxtwo/ViLA-PluginBase/actions/workflows/ci-build.yml)
+![GitHub](https://img.shields.io/github/license/charliefoxtwo/ViLA-PluginBase?style=flat-square)
 ![Discord](https://img.shields.io/discord/840762843917582347?style=flat-square)
 
 
@@ -42,7 +42,7 @@ Note that `QueueUserWorkItem()` returns as soon as the task is created, and the 
 
 You can find this package on NuGet. When installing, it is important to add the following to your .csproj file:
 ```
-<PackageReference Include="Virpil.Communicator.PluginBase" Version="<version>">
+<PackageReference Include="ViLA.PluginBase" Version="<version>">
     <ExcludeAssets>runtime</ExcludeAssets>
 </PackageReference>
 ```
@@ -53,7 +53,7 @@ This will prevent any dependency confusion between your plugin, any other plugin
 
 Some example plugins include:
 
-- [VPCDCSBios]()
+- [DCS Bios Reader](https://github.com/charliefoxtwo/ViLA-DCS-BIOS-Reader)
 
 
 ## Acknowledgements

@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
-namespace Virpil.Communicator.PluginBase
+namespace ViLA.PluginBase
 {
     public abstract class PluginBase
     {
