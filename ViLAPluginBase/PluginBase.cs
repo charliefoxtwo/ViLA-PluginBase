@@ -7,9 +7,29 @@ namespace ViLA.PluginBase
     public abstract class PluginBase
     {
         /// <summary>
-        /// Called when your plugin has data to send.
+        /// Called when your plugin has integer data to send.
         /// </summary>
         public Action<string, int> SendData { get; set; } = null!;
+
+        /// <summary>
+        /// Called when your plugin has string data to send.
+        /// </summary>
+        public Action<string, string> SendString { get; set; } = null!;
+
+        /// <summary>
+        /// Called when your plugin has float data to send.
+        /// </summary>
+        public Action<string, float> SendFloat { get; set; } = null!;
+
+        /// <summary>
+        /// Called when your plugin has boolean data to send.
+        /// </summary>
+        public Action<string, bool> SendBool { get; set; } = null!;
+
+        /// <summary>
+        /// Called when your plugin has a trigger to send.
+        /// </summary>
+        public Action<string> SendTrigger { get; set; } = null!;
 
         /// <summary>
         /// Logger factory that can be used to create loggers for your plugin.
