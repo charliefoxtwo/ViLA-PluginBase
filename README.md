@@ -1,13 +1,14 @@
 
 # ViLA Plugin Base
 
-![Nuget](https://img.shields.io/nuget/v/ViLA.PluginBase?style=flat-square)
+[![Nuget](https://img.shields.io/nuget/v/ViLA.PluginBase?style=flat-square)](https://www.nuget.org/packages/ViLA.PluginBase)
 [![.NET 5 CI build](https://github.com/charliefoxtwo/ViLA-PluginBase/actions/workflows/ci-build.yml/badge.svg?branch=develop)](https://github.com/charliefoxtwo/ViLA-PluginBase/actions/workflows/ci-build.yml)
-![GitHub](https://img.shields.io/github/license/charliefoxtwo/ViLA-PluginBase?style=flat-square)
-![Discord](https://img.shields.io/discord/840762843917582347?style=flat-square)
-
+[![GitHub](https://img.shields.io/github/license/charliefoxtwo/ViLA-PluginBase?style=flat-square)](LICENSE)
+[![Discord](https://img.shields.io/discord/840762843917582347?style=flat-square)](https://discord.gg/rWAF3AdsKT)
 
 This contains a single abstract class `PluginBase` to be used by any virpil communicator plugins.
+
+<img src="https://raw.githubusercontent.com/charliefoxtwo/ViLA-PluginBase/main/ViLAPluginBase/resources/rounded-plug.png" alt="ViLA Plugin Base logo - a vector outline of a plug, with the cord wound around it like an @ symbol" width="150" />
 
 ## Usage/Examples
 
