@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
@@ -42,5 +42,11 @@ namespace ViLA.PluginBase
         /// </summary>
         /// <returns>success of start</returns>
         public abstract Task<bool> Start();
+
+        /// <summary>
+        /// Stops the active thread and cleans up any unmanaged resources, if necessary. Stopping a plugin does not mean
+        /// it needs to be able to be started again.
+        /// </summary>
+        public abstract Task Stop();
     }
 }
