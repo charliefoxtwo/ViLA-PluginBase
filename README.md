@@ -28,8 +28,8 @@ public class MyPlugin : PluginBase
             var i = 0;
             while (true)
             {
-                // it's important to call PluginBase.SendData with your data
-                SendData("id", i++);
+                // it's important to call PluginBase.Send with your data
+                Send("id", i++);
                 Thread.Sleep(1000);
             }
         });
@@ -62,4 +62,3 @@ Some example plugins include:
 - [Package icon](https://www.freepik.com)
 - [readme tools](https://readme.so)
 - [badges](https://shields.io)
-  
