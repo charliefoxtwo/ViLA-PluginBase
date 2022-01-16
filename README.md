@@ -13,30 +13,41 @@ This contains a single abstract class `PluginBase` to be used by any virpil comm
 ## Usage/Examples
 
 ```c#
+using System.Threading;
+using System.Threading.Tasks;
+
 // custom inheriting class with *parameterless constructor*
 public class MyPlugin : PluginBase
 {
     // you can define your own parameterless constructor if you want, but
-    // you won't be able to send data and LoggerFactory won't be defined
+    // you won't be able to send data or access LoggerFactory within the constructor
+
+    private readonly CancellationTokenSource _cts = new();
+    private CancellationToken CancellationToken => _cts.Token;
 
     public override async Task<bool> Start()
     {
         // probably not something you want to do in practice, but
         // shows you should run your task on a different thread
-        return ThreadPool.QueueUserWorkItem(_ =>
+        return ThreadPool.QueueUserWorkItem(ctx =>
         {
             var i = 0;
-            while (true)
+            while (ctx.IsCancellationRequested)
             {
                 // it's important to call PluginBase.Send with your data
                 Send("id", i++);
                 Thread.Sleep(1000);
             }
-        });
+        }, CancellationToken, false);
+    }
+
+    public override async Task Stop()
+    {
+        _cts.Cancel();
     }
 }
 ```
-Note that `QueueUserWorkItem()` returns as soon as the task is created, and the task continues running on a different thread.
+Note that `QueueUserWorkItem()` returns as soon as the task is created, and the task continues running on a different thread. This is very important - all plugins must complete initialization and return from their respective `Start()` methods in order for ViLA to function.
 
 
 ## Installation

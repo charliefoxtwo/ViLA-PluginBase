@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
@@ -25,6 +26,11 @@ public abstract class PluginBase
     /// Logger factory that can be used to create loggers for your plugin.
     /// </summary>
     public ILoggerFactory LoggerFactory { get; set; } = null!;
+
+    /// <summary>
+    /// A collection of all triggers that ViLA is currently monitoring.
+    /// </summary>
+    public IReadOnlyCollection<string> Triggers { get; set; } = null!;
 
     /// <summary>
     /// Starts the thread used by the plugin to process and send data. Returns true if start was successful, false
