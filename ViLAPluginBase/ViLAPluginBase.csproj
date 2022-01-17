@@ -8,19 +8,18 @@
         <Title>ViLA Plugin Base</Title>
         <Description>Contains base types for use by ViLA plugins.</Description>
         <RepositoryType>git</RepositoryType>
-        <PackageVersion>2.0.0</PackageVersion>
+        <PackageVersion>2.1.0</PackageVersion>
         <PackageProjectUrl>https://github.com/charliefoxtwo/ViLA-PluginBase.git</PackageProjectUrl>
         <PackageLicenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/charliefoxtwo/ViLA-PluginBase.git</RepositoryUrl>
         <PackageIconUrl>https://raw.githubusercontent.com/charliefoxtwo/Virpil-Communicator-PluginBase/main/VirpilCommunicatorPluginBase/resources/rounded-plug.png</PackageIconUrl>
         <PackageIcon>rounded-plug.png</PackageIcon>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <AssemblyVersion>2.0.0</AssemblyVersion>
-        <FileVersion>2.0.0</FileVersion>
+        <AssemblyVersion>2.1.0</AssemblyVersion>
+        <FileVersion>2.1.0</FileVersion>
         <Authors>charliefoxtwo</Authors>
         <PackageTags>virpil</PackageTags>
-        <PackageReleaseNotes>* Switch to dynamic type for sending
-+ Add state and ability to clear state</PackageReleaseNotes>
+        <PackageReleaseNotes>+ Add property to retrieve all triggers being actively monitored by ViLA</PackageReleaseNotes>
         <Product>ViLA Plugin Base</Product>
     </PropertyGroup>
 
